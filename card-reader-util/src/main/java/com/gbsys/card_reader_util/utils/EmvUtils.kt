@@ -1,7 +1,7 @@
-package com.cardreadergb.utils
+package com.gbsys.card_reader_util.utils
 
+import com.gbsys.card_reader_util.models.TagAndLength
 import com.github.devnied.emvnfccard.iso7816emv.EmvTags
-import com.github.devnied.emvnfccard.iso7816emv.TagAndLength
 import com.github.devnied.emvnfccard.iso7816emv.TerminalTransactionQualifiers
 import com.github.devnied.emvnfccard.model.enums.CountryCodeEnum
 import com.github.devnied.emvnfccard.model.enums.CurrencyEnum

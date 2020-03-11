@@ -1,4 +1,4 @@
-package com.cardreadergb.utils
+package com.gbsys.card_reader_util.utils
 
 
 object HexUtils {

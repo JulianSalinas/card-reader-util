@@ -1,4 +1,4 @@
-package com.cardreadergb.utils
+package com.gbsys.card_reader_util.utils
 
 import com.gbsys.card_reader_util.models.TLV
 import com.gbsys.card_reader_util.models.TagAndLength
