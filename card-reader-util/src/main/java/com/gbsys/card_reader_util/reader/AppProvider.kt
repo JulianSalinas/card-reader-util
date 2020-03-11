@@ -1,4 +1,4 @@
-package com.cardreadergb.reader
+package com.gbsys.card_reader_util.reader
 
 import com.cardreadergb.utils.*
 import com.gbsys.card_reader_util.models.Network

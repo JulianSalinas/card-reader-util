@@ -1,6 +1,23 @@
+apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+
+publish {
+
+    def groupProjectID = 'com.gbsys.card-reader-util'
+    def artifactProjectID = 'card-reader-util'
+    def publishVersionID = 'library_version_code'
+
+    userOrg = 'julian10201'
+    repoName = 'card-reader-util'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = 'Tool created to read credit card\'s information using NFC'
+    website = 'https://github.com/JulianSalinas/card-reader-util'
+
+}
 
 android {
     compileSdkVersion 29

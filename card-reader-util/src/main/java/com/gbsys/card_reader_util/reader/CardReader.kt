@@ -1,4 +1,4 @@
-package com.cardreadergb.reader
+package com.gbsys.card_reader_util.reader
 
 import android.util.Log
 import com.cardreadergb.utils.*
