@@ -1,22 +1,28 @@
-apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
 
-publish {
+ext {
 
-    def groupProjectID = 'com.gbsys.card-reader-util'
-    def artifactProjectID = 'card-reader-util'
-    def publishVersionID = 'library_version_code'
+    bintrayRepo = "card-reader-util"
+    bintrayName = "com.gbsys.card-reader-util"
+    libraryName = "card-reader-util"
 
-    userOrg = 'julian10201'
-    repoName = 'card-reader-util'
-    groupId = groupProjectID
-    artifactId = artifactProjectID
-    publishVersion = publishVersionID
-    desc = 'Tool created to read credit card\'s information using NFC'
-    website = 'https://github.com/JulianSalinas/card-reader-util'
+    publishedGroupId = "com.gbsys.card-reader-util"
+    artifact = "card-reader-util"
+    libraryVersion = "0.1.0"
 
+    libraryDescription = 'Tool created to read credit card\'s information using NFC'
+    siteUrl = "https://github.com/JulianSalinas/card-reader-util"
+    gitUrl = "https://github.com/JulianSalinas/card-reader-util.git"
+    developerId = "julian10201"
+    developerName = "Julian Salinas"
+    developerEmail = "july12sali@gmail.com"
+    licenseName = "The Apache Software License, Version 2.0"
+    licenseUrl = "https://www.apache.org/licenses/LICENSE-2.0.txt"
+    allLicenses = ["Apache-2.0"]
 }
 
 android {
@@ -42,6 +48,10 @@ android {
 
 }
 
+repositories {
+    mavenCentral()
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
@@ -51,4 +61,9 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.github.devnied.emvnfccard:library:3.0.0'
+}
+
+if(project.rootProject.file('local.properties').exists()) {
+    apply from: "https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle"
+    apply from: "https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle"
 }
