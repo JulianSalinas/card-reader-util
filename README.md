@@ -5,10 +5,32 @@ Here is his [REPO](https://github.com/devnied/EMV-NFC-Paycard-Enrollment)
 
 
 ### How to install? 
-Write this line in your `build.gradle`
+Write these lines in your `build.gradle`
 
-```console
+```groovy
+implementation 'com.github.devnied.emvnfccard:library:3.0.0'
 implementation 'com.gbsys.card-reader-util:card-reader-util:0.1.0'
+```
+
+Add the necessary permissions to your `AndroidManifest.xml` 
+
+```xml
+<manifest>
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-feature android:name="android.hardware.nfc" android:required="true" />
+</manifest>
+```
+
+Add the following `intent-filter` to the activity in your `AndroidManifest.xml` 
+
+```xml 
+<!-- Activity which is going to use NFC-->
+<activity android:name=".MainActivity">
+    <intent-filter>
+        <action android:name="android.nfc.action.TAG_DISCOVERED"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+    </intent-filter>
+</activity>
 ```
 
 ### How to use it?

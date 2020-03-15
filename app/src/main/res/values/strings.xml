@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Card Reader Util</string>
+    <string name="scan_request">Acerque la tarjeta al receptor</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_id">AID</string>
+    <string name="app_technology">Tecnología usada</string>
+    <string name="app_label">Tipo de tarjeta</string>
+    <string name="paycard_number">Numero de tarjeta</string>
+    <string name="paycard_expiration">Fecha de expiración</string>
+    <string name="paycard_owner">Tarjetahabiente</string>
+    <string name="back_button">Atrás</string>
 </resources>
