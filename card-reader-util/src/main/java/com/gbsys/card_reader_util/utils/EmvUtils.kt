@@ -1,12 +1,7 @@
 package com.gbsys.card_reader_util.utils
 
+import com.gbsys.card_reader_util.emvnfccard.*
 import com.gbsys.card_reader_util.models.TagAndLength
-import com.github.devnied.emvnfccard.iso7816emv.EmvTags
-import com.github.devnied.emvnfccard.iso7816emv.TerminalTransactionQualifiers
-import com.github.devnied.emvnfccard.model.enums.CountryCodeEnum
-import com.github.devnied.emvnfccard.model.enums.CurrencyEnum
-import com.github.devnied.emvnfccard.model.enums.TransactionTypeEnum
-import fr.devnied.bitlib.BytesUtils
 import org.apache.commons.lang3.StringUtils
 import java.io.ByteArrayOutputStream
 import java.security.SecureRandom

@@ -1,10 +1,10 @@
 package com.gbsys.card_reader_util.utils
 
+import com.gbsys.card_reader_util.emvnfccard.BytesUtils
+import com.gbsys.card_reader_util.emvnfccard.EmvTags
+import com.gbsys.card_reader_util.emvnfccard.ITag
 import com.gbsys.card_reader_util.models.TLV
 import com.gbsys.card_reader_util.models.TagAndLength
-import com.github.devnied.emvnfccard.iso7816emv.EmvTags
-import com.github.devnied.emvnfccard.iso7816emv.ITag
-import fr.devnied.bitlib.BytesUtils
 import org.apache.commons.lang3.ArrayUtils
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
@@ -213,7 +213,7 @@ object TlvUtil {
      * @param pTag tag to find
      * @return tag value or null
      */
-    fun getValue(pData: ByteArray?, vararg pTag: ITag?): ByteArray? {
+    fun getValue(pData: ByteArray?, vararg pTag: ITag): ByteArray? {
         var ret: ByteArray? = null
         if(pData == null) return ret
         val stream = ByteArrayInputStream(pData)

@@ -1,6 +1,7 @@
 package com.gbsys.card_reader_util.models
 
-import com.github.devnied.emvnfccard.iso7816emv.ITag
+import com.gbsys.card_reader_util.emvnfccard.ITag
+
 
 data class TLV(
 

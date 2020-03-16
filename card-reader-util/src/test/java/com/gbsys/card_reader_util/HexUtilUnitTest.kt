@@ -1,13 +1,13 @@
-package com.cardreadergb
+package com.gbsys.card_reader_util
 
-import com.cardreadergb.utils.HexUtils
+import com.gbsys.card_reader_util.utils.HexUtils
 import org.junit.Test
 import org.junit.Assert.*
 
 class HexUtilUnitTest {
 
+    // Results got from rapidtables.com/convert/number/ascii-to-hex.html
     @Test
-    // Resulte got from rapidtables.com/convert/number/ascii-to-hex.html
     fun bytesToHexTest() {
         val bytes = "Julian".toByteArray()
         val hex = HexUtils.bytesToHex(bytes)

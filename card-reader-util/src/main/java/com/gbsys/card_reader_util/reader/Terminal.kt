@@ -2,7 +2,6 @@ package com.gbsys.card_reader_util.reader
 
 import android.nfc.Tag
 import android.nfc.tech.IsoDep
-import com.gbsys.card_reader_util.reader.ITransceiver
 
 class Terminal constructor(tag: Tag) : ITransceiver {
 

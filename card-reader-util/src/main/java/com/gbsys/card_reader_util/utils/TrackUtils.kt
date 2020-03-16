@@ -1,9 +1,9 @@
 package com.gbsys.card_reader_util.utils
 
 import android.util.Log
+import com.gbsys.card_reader_util.emvnfccard.EmvTags
 import com.gbsys.card_reader_util.models.PayCard
 import com.gbsys.card_reader_util.utils.TlvUtil.getValue
-import com.github.devnied.emvnfccard.iso7816emv.EmvTags
 import org.apache.commons.lang3.time.DateUtils
 import java.text.ParseException
 import java.text.SimpleDateFormat
