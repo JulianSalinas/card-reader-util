@@ -8,7 +8,7 @@ Here is his [REPO](https://github.com/devnied/EMV-NFC-Paycard-Enrollment)
 Write these lines in your `build.gradle`
 
 ```groovy
-implementation 'com.github.devnied.emvnfccard:library:3.0.0'
+implementation 'org.apache.commons:commons-lang3:3.6'
 implementation 'com.gbsys.card-reader-util:card-reader-util:0.1.0'
 ```
 
